@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculator"
+                android:gravity="center"
+                android:textColor="#202020"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:background="@drawable/shape_white_with_stroke"
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:lines="3"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/cal_btn"
+                    android:text="CE"/>
+                <Button
+                    android:id="@+id/btn_divide"
+                    style="@style/cal_btn"
+                    android:text="÷"/>
+                <Button
+                    android:id="@+id/btn_multiply"
+                    style="@style/cal_btn"
+                    android:text="×"/>
+                <Button
+                    android:id="@+id/btn_clear"
+                    style="@style/cal_btn"
+                    android:text="C"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_seven"
+                    style="@style/cal_btn"
+                    android:text="7"/>
+                <Button
+                    android:id="@+id/btn_eight"
+                    style="@style/cal_btn"
+                    android:text="8"/>
+                <Button
+                    android:id="@+id/btn_nine"
+                    style="@style/cal_btn"
+                    android:text="9"/>
+                <Button
+                    android:id="@+id/btn_add"
+                    style="@style/cal_btn"
+                    android:text="+"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_four"
+                    style="@style/cal_btn"
+                    android:text="4"/>
+                <Button
+                    android:id="@+id/btn_five"
+                    style="@style/cal_btn"
+                    android:text="5"/>
+                <Button
+                    android:id="@+id/btn_six"
+                    style="@style/cal_btn"
+                    android:text="6"/>
+                <Button
+                    android:id="@+id/btn_sub"
+                    style="@style/cal_btn"
+                    android:text="-"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_one"
+                    style="@style/cal_btn"
+                    android:text="1"/>
+                <Button
+                    android:id="@+id/btn_two"
+                    style="@style/cal_btn"
+                    android:text="2"/>
+                <Button
+                    android:id="@+id/btn_three"
+                    style="@style/cal_btn"
+                    android:text="3"/>
+                <Button
+                    android:id="@+id/btn_sqrt"
+                    style="@style/cal_btn"
+                    android:text="sqrt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_zero"
+                    style="@style/cal_btn"
+                    android:text="0"
+                    android:layout_weight="2"/>
+                <Button
+                    android:id="@+id/btn_point"
+                    style="@style/cal_btn"
+                    android:text="."/>
+                <Button
+                    android:id="@+id/btn_equal"
+                    style="@style/cal_btn"
+                    android:text="="/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
